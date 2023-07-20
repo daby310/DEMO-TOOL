@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.points-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.point {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.explanation {
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.graph-container {
+  margin-top: 20px;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Styles for selected options */
+.options button.yes {
+  background-color: #d4f7cd;
+}
+
+.options button.no {
+  background-color: #f7cdcd;
+}
+
+.options button.not-applicable {
+  background-color: #d1f1ff;
+}

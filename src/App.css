@@ -5,7 +5,6 @@ body {
 }
 
 .app {
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -82,4 +81,14 @@ canvas {
 
 .options button.not-applicable {
   background-color: #d1f1ff;
+}
+
+.separator {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.bold-line {
+  border-bottom: 2px solid #000; /* Adjust the thickness and color as needed */
+  margin: 20px 0; /* Add some vertical spacing if required */
 }

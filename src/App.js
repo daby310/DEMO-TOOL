@@ -75,7 +75,7 @@ const DemoTool = () => {
         <h1 className="mb-2">Demo Tool</h1>
         <Tab.Container id="left-tabs-example" defaultActiveKey="fr1">
           <Row>
-            <Col sm={3}>
+            <Col sm={2}>
               <Nav variant="pills" className="flex-column">
                 <Nav.Item>
                   <Nav.Link eventKey="fr1">FR1</Nav.Link>

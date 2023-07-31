@@ -146,6 +146,10 @@ const DemoTool = () => {
       {/* Display more graphs for other points here */}
       {/* ... */}
     // </div>
+    // <form onSubmit={submitHandler}>
+    //   <h1></h1>
+    //   <button>Submit</button>
+    // </form>
 };
 
 export default DemoTool;

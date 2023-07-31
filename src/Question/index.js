@@ -1,6 +1,12 @@
 import { Col, Row, Container, Form, Button } from "react-bootstrap"
+import {useState} from 'react'
+export default function Question({srNo, question, auditionNote, id, initialAnswer,org}) {
+  const [selectedOption, setSelectedOption] = useState(initialAnswer); // State to keep track of the selected radio button
 
-export default function Question({srNo, question, auditionNote, id}) {
+  const handleRadioChange = (event) => {
+    setSelectedOption(event.target.value); // Update the state with the selected value
+  };
+
     return (
         <>
             <Row className="mb-5">
@@ -21,18 +27,27 @@ export default function Question({srNo, question, auditionNote, id}) {
                         label="Yes"
                         name="group1"
                         type="radio"
+                        value="yes"
+                        checked={selectedOption === 'yes'} // Set 'checked' based on the state
+                        onChange={handleRadioChange} // Handle radio button selection
                     />
                     <Form.Check
                         inline
                         label="No"
                         name="group1"
                         type="radio"
+                        value="no"
+                        checked={selectedOption === 'no'} // Set 'checked' based on the state
+                        onChange={handleRadioChange} // Handle radio button selection
                     />
                     <Form.Check
                         inline
                         label="Not Applicable"
                         name="group1"
                         type="radio"
+                        value="not applicable"
+                        checked={selectedOption === 'not applicable'} // Set 'checked' based on the state
+                        onChange={handleRadioChange} // Handle radio button selection
                     />
                 </div>
                 <Row>
@@ -41,6 +56,7 @@ export default function Question({srNo, question, auditionNote, id}) {
                             <Form.Group className="my-3" controlId={id}>
                                 <Form.Label>Comment</Form.Label>
                                 <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: '80px' }}/>
+                                <p>{org}</p>
                             </Form.Group>
                         </Col>
                     </Row>

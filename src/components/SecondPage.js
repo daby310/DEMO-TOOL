@@ -57,7 +57,7 @@
 //                 </Tab.Container>
 //                 {/* Point 1 */}
 //                 {/* Point 2 */}
-//                 {/* <Point title="Point2"/> */}
+//                 {/* <Point title="level2"/> */}
 //               </Container>
 //             </>
 //           );

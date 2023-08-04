@@ -6,7 +6,7 @@ const QuestionSeparator = () => <div className="separator"></div>;
 export default function Form2() {
 
     const [answers, setAnswers] = useState({
-        point1: {
+        level1: {
           question1: null,
           question2: null,
           question3: null,
